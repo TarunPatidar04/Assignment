@@ -17,7 +17,7 @@ const LoginForm: React.FC = () => {
     e.preventDefault();
     setError("");
     try {
-      const endpoint = isLogin ? "/api/login" : "/api/register";
+      const endpoint = isLogin ? "/login" : "/register";
       const payload = isLogin
         ? { username, password }
         : { username, password, age: parseInt(age), gender };
