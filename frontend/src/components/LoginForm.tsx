@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import axios from "axios";
+import api from "../api";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const LoginForm: React.FC = () => {
         ? { username, password }
         : { username, password, age: parseInt(age), gender };
 
-      const res = await axios.post(endpoint, payload);
+      const res = await api.post(endpoint, payload);
       auth?.login(res.data.token, res.data.user);
       navigate("/");
     } catch (err: any) {
