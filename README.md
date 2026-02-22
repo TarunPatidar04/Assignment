@@ -28,7 +28,7 @@ This repository contains both the frontend and backend in a monorepo structure:
 
 ## 🗄️ Database Access
 
-The interviewer can view the active database directly using this connection string in Postgres tools (like pgAdmin or DBeaver):
+view the active database directly using this connection string in Postgres tools (like pgAdmin or DBeaver):
 
 ```
 postgresql://analytics_db_kzjh_user:dYcwcGGlA8bWKzSS2LDTjRbS2pH46gcO@dpg-d6d8n14tgctc73f05dug-a.oregon-postgres.render.com/analytics_db_kzjh?sslmode=require
