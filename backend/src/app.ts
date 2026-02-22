@@ -18,6 +18,10 @@ app.use(cookieParser());
 
 app.use("/api", routes);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Product Analytics Dashboard API!");
+});
+
 const PORT = process.env.PORT || 3000;
 
 if (require.main === module) {

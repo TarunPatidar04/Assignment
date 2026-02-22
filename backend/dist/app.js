@@ -18,6 +18,9 @@ app.use((0, cors_1.default)({
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use("/api", routes_1.default);
+app.get("/", (req, res) => {
+    res.send("Welcome to the Product Analytics Dashboard API!");
+});
 const PORT = process.env.PORT || 3000;
 if (require.main === module) {
     app.listen(PORT, () => {
